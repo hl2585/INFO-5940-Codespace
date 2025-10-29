@@ -1,0 +1,27 @@
+[
+ {
+  "op": "add",
+  "path": "/properties/DatabaseInsightsMode/enum",
+  "value": [
+   "advanced",
+   "standard"
+  ]
+ },
+ {
+  "op": "add",
+  "path": "/properties/ClusterScalabilityType/enum",
+  "value": [
+   "limitless",
+   "scaleout",
+   "standard"
+  ]
+ },
+ {
+  "op": "add",
+  "path": "/properties/MasterUserAuthenticationType/enum",
+  "value": [
+   "iam-db-auth",
+   "password"
+  ]
+ }
+]

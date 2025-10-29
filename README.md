@@ -1,3 +1,25 @@
+# How to Run
+- create venv (optional) 
+python -m venv .venv && source .venv/bin/activate && python -m pip install -U pip
+- python -m pip install -r requirements.txt
+- export OPENAI_API_KEY="YOUR_KEY"
+export OPENAI_BASE_URL="https://api.ai.it.cornell.edu"
+- streamlit run chat_with_pdf.py
+
+# Features Overview
+- Upload multiple documents (.txt/.md/.pdf)
+- Automatic chunking
+- Vector search with ChromaDB
+- LangGraph RAG flow with gpt-4o.
+- Answers are retrieved in chunks and show Top sources
+
+# Changes
+- Added multi-file upload (txt/md/pdf)
+- Implemented chunking via RecursiveCharacterTextSplitter
+- Connected Chroma vector store with OpenAI embeddings
+- Built a minimal LangGraph pipeline and chat UI with citations
+- Added a Rebuild index control and basic status handling
+
 # INFO 5940 
 Welcome to the INFO 5940 repository. You will complete your work using [**GitHub Codespaces**](#about-github-codespaces) and save your progress in your own GitHub repository. This guide will walk you through setting up the development environment and running the test notebook.  
 
